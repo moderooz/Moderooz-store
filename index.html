@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه مُد روز</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            background-color: #e0e0e0;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .products {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="images/logo.png" alt="لوگو"></div>
+        <h1>فروشگاه مُد روز</h1>
+    </header>
+    <nav>
+        <a href="#">دسته‌بندی‌ها</a>
+        <a href="#">تخفیف‌دارها</a>
+        <a href="#">پربازدیدترین‌ها</a>
+        <a href="#">جدیدترین‌ها</a>
+    </nav>
+    <section class="products">
+        <div class="product-card">
+            <img src="images/shirt.jpg" alt="پیراهن مردانه">
+            <h3>پیراهن مردانه</h3>
+            <p>قیمت: ۴۵۰,۰۰۰ تومان</p>
+        </div>
+        <div class="product-card">
+            <img src="images/manto.jpg" alt="مانتو زنانه">
+            <h3>مانتو زنانه</h3>
+            <p>قیمت: ۶۵۰,۰۰۰ تومان</p>
+        </div>
+        <div class="product-card">
+            <img src="images/shoes1.jpg" alt="کفش مردانه">
+            <h3>کفش مردانه</h3>
+            <p>قیمت: ۵۵۰,۰۰۰ تومان</p>
+        </div>
+    </section>
+</body>
+</html>
